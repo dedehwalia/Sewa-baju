@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir</title>
+    <link rel="stylesheet" href="peminjaman.css">
+</head>
+<body>
+    
+    
+
+    <header class="navbar">
+        <div class="nav-content">
+            <span>Website Peminjaman</span>
+            <div class="menu-icon"></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-container">
+            
+            <div class="form-box">
+                <h2>Form Peminjaman Costum</h2>
+                
+                <div class="input-group">
+                    <label>Nama Peminjam</label>
+                    <input type="text" id="namaInput" placeholder="Ketik nama lengkap...">
+                </div>
+
+                <div class="input-group">
+                    <label>Pilih Costum</label>
+                    <select id="costumInput">
+                        <option value="">-- Pilih dari Galeri --</option>
+                        <option value="Baju Adat Jawa">Baju Adat</option>
+                        <option value="Anime">Anime</option>
+                        <option value="Halloween">Halloween</option>
+                    </select>
+                </div>
+                
+
+                <div class="input-group">
+                    <label>Tanggal Pinjaman</label>
+                    <input type="date" id="tanggalInput">
+                </div>
+                
+                <label for="metode">metode pembayaran</label>
+                <select id="metodepembayaraninput">
+                    <option value="">Pilih Pembayaran</option>
+                    <option>Dana</option>
+                    <option>Tunai</option>
+                    <option>Gopay</option>
+                    <option>E-money</option>
+                </select>
+                
+                <label for="metode">ukuran baju</label>
+                <select id="ukuranbajuinput">
+                    <option value="">ukuran baju</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                
+                <button class="btn-submit" onclick="tambahPeminjam()">Pinjam</button>
+
+                <div class="table-section">
+                    <h3>Daftar Peminjaman</h3>
+                    <table id="tabelData">
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Costum</th>
+                                <th>Tanggal</th>
+                                <th>metode pembayaran</th>
+                                <th>ukuran baju</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="category-title"></h2>
+            <div class="grid-layout">  
+            </div>
+        </section>
+    </main>
+
+    <script src="peminjaman.js"></script>
+</body>
+</html>
